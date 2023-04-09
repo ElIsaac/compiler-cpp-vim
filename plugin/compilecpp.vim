@@ -16,8 +16,12 @@ function! Compilecpp()
       
   
       if system("g++ -std=c++11 -o " . outputFile . " " . args) == 0
-          execute "terminal ./" . outputFile
+            echomsg 'Compile succesfully'
+            execute "terminal ./" . outputFile
+      else
+            echoerr 'Compile failed'
       endif
+      
 endfunction
 
 command! CompilerCPP call Compilecpp() 
