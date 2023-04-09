@@ -1,1 +1,1 @@
-command! CompilerCPP call BuildAndRun() 
+command! CompilerCPP call compilecpp() 

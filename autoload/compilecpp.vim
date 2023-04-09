@@ -1,4 +1,4 @@
-function! BuildAndRun()
+function! compilecpp()
  79     let sourceFile = expand("%")
  80     let outputFile = substitute(sourceFile, '\.\(cpp\|c\|cc\)$', '.out', '')
  81 
