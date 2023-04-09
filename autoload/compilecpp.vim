@@ -22,5 +22,4 @@ function! BuildAndRun()
  99         execute "terminal ./" . outputFile
 100     endif
 101 endfunction
-command! BuildAndRun call BuildAndRun()
 
