@@ -1,1 +1,1 @@
-command! CompilerCPP call compilecpp() 
+command! CompilerCPP call CompilerCPP() 
