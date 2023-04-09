@@ -14,9 +14,7 @@ function! Compilecpp()
           let args = sourceFile
       endif
 
-      if filereadable(outputFile)
-          call delete(outputFile)
-      endif
+      
   
       if system("g++ -std=c++11 -o " . outputFile . " " . args) == 0
           execute "terminal ./" . outputFile
