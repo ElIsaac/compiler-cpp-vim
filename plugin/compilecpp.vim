@@ -8,10 +8,12 @@ function! Compilecpp()
           let files = systemlist("ls *.cpp")
           let args = ""
           for file in files
-          ¦   let args .= file . " "
+            let args .= file . " "
+            echoerr file
           endfor
       else
           let args = sourceFile
+          echoerr "Paso"
       endif
       echo "g++ -std=c++11 -o " . outputFile . " " . args
       
