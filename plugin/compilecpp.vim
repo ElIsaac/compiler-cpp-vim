@@ -13,7 +13,7 @@ function! Compilecpp()
       else
           let args = sourceFile
       endif
-
+      echo "g++ -std=c++11 -o " . outputFile . " " . args
       
   
       if system("g++ -std=c++11 -o " . outputFile . " " . args) == 0
