@@ -1,4 +1,4 @@
-function! compilecpp()
+function! Compilecpp()
       let sourceFile = expand("%")
       let outputFile = substitute(sourceFile, '\.\(cpp\|c\|cc\)$', '.out', '')
   
@@ -23,4 +23,4 @@ function! compilecpp()
       endif
 endfunction
 
-command! CompilerCPP call compilecpp() 
+command! CompilerCPP call Compilecpp() 
