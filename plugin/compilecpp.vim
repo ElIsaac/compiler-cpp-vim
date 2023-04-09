@@ -1,5 +1,5 @@
 function! Compilecpp()
-      let sourceFile = expand("%")
+      let sourceFile = expand("%:t")
       let outputFile = substitute(sourceFile, '\.\(cpp\|c\|cc\)$', '.out', '')
   
       let compileAll = input("Compile all files? [Y/n]") ==# "Y"
